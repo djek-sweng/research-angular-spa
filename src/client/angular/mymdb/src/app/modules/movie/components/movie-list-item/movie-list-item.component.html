@@ -1,0 +1,18 @@
+<div class="col">
+  <div class="card">
+    <img [src]="movie.imageUrl" [alt]="movie.title" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">{{ movie.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">
+        {{ getDescription() }}
+      </h6>
+      <p class="card-text">{{ movie.rating }} of 5 stars</p>
+      <a class="card-link" [routerLink]="['/movie', movie.id, 'details']">
+        Details
+      </a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">{{ getLastUpdated() }}</small>
+    </div>
+  </div>
+</div>

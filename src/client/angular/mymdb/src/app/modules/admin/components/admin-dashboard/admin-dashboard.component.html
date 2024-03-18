@@ -1,0 +1,25 @@
+<header>
+  <h1>Admin Dashboard</h1>
+</header>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Movie administration</h5>
+        <p class="card-text">Show, edit and delete user movies.</p>
+        <a class="card-link" [routerLink]="['/admin', 'movie']">Open</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">User administration</h5>
+        <p class="card-text">Show and delete user accounts.</p>
+        <a class="card-link" [routerLink]="['/admin', 'user']">Open</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<form [formGroup]="fg" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <h4>Movie Details</h4>
+  </div>
+
+  <div class="form-group">
+    <img [src]="imageUrl.value" alt="" class="img-responsive" />
+  </div>
+
+  <div class="form-group">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      formControlName="title"
+      id="title"
+      class="form-control"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="description" class="form-label">Description</label>
+    <textarea
+      type="text"
+      formControlName="description"
+      id="description"
+      class="form-control"
+      rows="2"
+    >
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="image-url" class="form-label">Image URL</label>
+    <input
+      type="text"
+      formControlName="imageUrl"
+      id="image-url"
+      class="form-control"
+      #imageUrl
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="rating" class="form-label">Rating</label>
+    <input
+      type="number"
+      step="1"
+      max="5"
+      min="1"
+      formControlName="rating"
+      id="rating"
+      class="form-control"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="updated-at" class="form-label">Updated At</label>
+    <input
+      type="text"
+      formControlName="updatedAt"
+      id="updated-at"
+      class="form-control"
+    />
+  </div>
+
+  <div class="form-group">
+    <button type="button" class="btn btn-link" (click)="onCancel()">
+      Cancel
+    </button>
+    <button type="submit" class="btn btn-primary" [disabled]="fg.invalid">
+      Save
+    </button>
+    <button type="button" class="btn btn-danger" (click)="onDelete()">
+      Delete
+    </button>
+  </div>
+</form>

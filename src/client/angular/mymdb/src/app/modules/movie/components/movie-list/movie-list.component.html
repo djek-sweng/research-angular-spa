@@ -1,0 +1,11 @@
+<app-movie-add [visible]="isAddMode" (close)="onCloseAdd()"> </app-movie-add>
+
+<header>
+  <h1>Favorite Movies</h1>
+  <button class="btn btn-primary" (click)="onAdd()">Add Movie</button>
+</header>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <app-movie-list-item *ngFor="let movie of movies$ | async" [movie]="movie">
+  </app-movie-list-item>
+</div>

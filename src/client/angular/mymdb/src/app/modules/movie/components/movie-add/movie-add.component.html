@@ -1,0 +1,74 @@
+<app-backdrop [visible]="visible"></app-backdrop>
+
+<form #formRef="ngForm" (ngSubmit)="onSubmit(formRef)">
+  <div id="modal" [class]="{ visible: true === visible }">
+    <div class="form-group">
+      <h4>Add Your Movie</h4>
+    </div>
+
+    <div class="form-group">
+      <label for="title" class="form-label">Title</label>
+      <input
+        ngModel
+        required
+        type="text"
+        name="title"
+        id="title"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        ngModel
+        type="text"
+        name="description"
+        id="description"
+        class="form-control"
+        rows="2"
+      >
+      </textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="image-url" class="form-label">Image URL</label>
+      <input
+        ngModel
+        required
+        type="text"
+        name="imageUrl"
+        id="image-url"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="rating" class="form-label">Rating</label>
+      <input
+        ngModel
+        required
+        type="number"
+        step="1"
+        max="5"
+        min="1"
+        name="rating"
+        id="rating"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <button type="button" class="btn btn-link" (click)="onCancel(formRef)">
+        Cancel
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="formRef.invalid"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</form>

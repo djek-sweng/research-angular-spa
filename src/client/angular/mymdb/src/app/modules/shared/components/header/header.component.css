@@ -1,0 +1,16 @@
+header {
+  background-color: #bfd2f4;
+  padding: 0.5em;
+}
+
+nav {
+  background-color: #bfd2f4;
+}
+
+.dropdown-menu {
+  cursor: pointer;
+}
+
+#sign-out {
+  cursor: pointer;
+}

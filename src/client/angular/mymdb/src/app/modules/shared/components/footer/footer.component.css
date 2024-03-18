@@ -1,4 +1,10 @@
 footer {
-  background-color: #bfd2f4;
-  padding: 0.5em;
+  background-color: var(--color-dark-grey);
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer > div {
+  margin: 0 1rem;
 }

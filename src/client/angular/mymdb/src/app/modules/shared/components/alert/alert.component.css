@@ -20,6 +20,10 @@
   border-radius: 4px;
 }
 
+.alert-box > p {
+  color: red;
+}
+
 .alert-box-actions {
   text-align: right;
 }

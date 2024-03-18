@@ -1,3 +1,16 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 .card {
+  margin: 0 1rem 2rem 1rem;
+  border: 2px solid black;
+  width: 400px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }

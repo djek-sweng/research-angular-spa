@@ -67,9 +67,12 @@ ul {
 }
 
 .page {
-  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.page > h1 {
+  text-align: center;
 }
 
 .form {
@@ -84,7 +87,16 @@ ul {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-top: 0.25em;
+  margin-top: 0.5rem;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 0.2rem;
 }
 
 .btn {

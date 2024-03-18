@@ -1,6 +1,9 @@
 {
-  "name": "mymdb",
-  "version": "0.0.0",
+  "name": "angular-spa",
+  "version": "1.0.0",
+  "description": "Angular SPA (Authorization Bearer, API)",
+  "author": "djek-sweng",
+  "license": "ISC",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +12,6 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",

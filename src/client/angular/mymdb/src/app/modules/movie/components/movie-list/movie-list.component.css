@@ -1,3 +1,8 @@
+.controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .btn {
-  margin-bottom: 0.5rem;
+  margin-right: 1rem;
 }

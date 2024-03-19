@@ -61,6 +61,13 @@ textarea:hover {
   border-color: var(--active-color);
 }
 
+button:disabled,
+input:disabled,
+textarea:disabled {
+  color: var(--color-white);
+  background-color: var(--color-dark-grey);
+}
+
 ul {
   list-style-type: none;
 }

@@ -39,4 +39,8 @@ export class AdminMovieTableComponent implements OnInit {
 
     this.adminMovieService.deleteMovie(id);
   }
+
+  sliceTitle(title: string): string {
+    return title.slice(0, 40);
+  }
 }

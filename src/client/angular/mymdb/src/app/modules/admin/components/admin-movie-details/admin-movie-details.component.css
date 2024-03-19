@@ -2,12 +2,8 @@
   margin-bottom: 4px;
 }
 
-.button {
-  margin-right: 4px;
-}
-
 img {
-  max-height: 20em;
+  max-height: 20rem;
   border: 1px none #ccc;
   border-radius: 5px;
 }

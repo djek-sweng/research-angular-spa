@@ -4,4 +4,4 @@ cd "./src/client/angular/mymdb"
 
 npm install
 
-npm start
+npm run start

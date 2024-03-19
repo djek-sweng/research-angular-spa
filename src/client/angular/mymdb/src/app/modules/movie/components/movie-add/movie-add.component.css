@@ -1,0 +1,40 @@
+#modal {
+  position: fixed;
+  z-index: 100;
+  background: var(--color-light-grey);
+  border-radius: 10px;
+  width: 80%;
+  top: 20vh;
+  left: 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+#modal.visible {
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+.form-group {
+  padding: 0.25rem 0.5rem;
+}
+
+.form-group > h1 {
+  font-size: 1.5rem;
+}
+
+.form-group > textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 5rem;
+  max-height: 8rem;
+}
+
+.form-group:last-of-type {
+  margin-bottom: 0.75rem;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 2px solid orangered;
+}

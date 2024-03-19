@@ -1,0 +1,16 @@
+<div class="card">
+  <img [src]="movie.imageUrl" [alt]="movie.title" class="card-img-top" />
+  <div class="card-body">
+    <h1 class="card-title">{{ getTitle() }}</h1>
+    <h2 class="card-subtitle">
+      {{ getDescription() }}
+    </h2>
+    <p class="card-text">{{ movie.rating }} of 5 stars</p>
+    <a class="card-link" [routerLink]="['/movie', movie.id, 'details']">
+      Details
+    </a>
+  </div>
+  <div class="card-footer">
+    <span>{{ getLastUpdated() }}</span>
+  </div>
+</div>

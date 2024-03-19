@@ -1,0 +1,23 @@
+.logo-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  padding: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #f44336aa);
+}
+
+.link {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.link:hover {
+  color: var(--angular-color);
+}

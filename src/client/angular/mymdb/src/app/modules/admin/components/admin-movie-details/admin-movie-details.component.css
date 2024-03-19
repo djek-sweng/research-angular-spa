@@ -1,0 +1,14 @@
+.form-group {
+  margin-bottom: 4px;
+}
+
+img {
+  max-height: 20rem;
+  border: 1px none #ccc;
+  border-radius: 5px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 2px solid orangered;
+}

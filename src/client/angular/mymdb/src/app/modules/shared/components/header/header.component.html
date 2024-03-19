@@ -1,0 +1,49 @@
+<header class="container">
+  <nav class="navbar">
+    <ul class="list">
+      <li>
+        <a
+          [routerLink]="['/home']"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >MyMDb</a
+        >
+      </li>
+      <li *ngIf="isAuthorizedUser">
+        <a
+          [routerLink]="['/movie']"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Movies
+        </a>
+      </li>
+      <li *ngIf="isAuthorizedAdmin">
+        <a
+          [routerLink]="['/admin']"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Admin
+        </a>
+      </li>
+    </ul>
+    <ul class="list">
+      <li *ngIf="isAuthenticated === false">
+        <a
+          [routerLink]="['/auth']"
+          [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Authentication
+        </a>
+      </li>
+      <li *ngIf="isAuthenticated">
+        <span>{{ email }}</span>
+      </li>
+      <li *ngIf="isAuthenticated">
+        <a id="sign-out" (click)="signOut()">Signout</a>
+      </li>
+    </ul>
+  </nav>
+</header>

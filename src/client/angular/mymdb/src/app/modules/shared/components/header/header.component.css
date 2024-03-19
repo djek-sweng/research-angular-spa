@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--color-dark-grey);
+  padding: 1em 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list > li {
+  padding-right: 1.5rem;
+}
+
+.list > li:first-of-type {
+  padding-left: 1.5rem;
+}
+
+.list > li > a {
+  font-size: 1.25rem;
+  font-weight: bold;
+}

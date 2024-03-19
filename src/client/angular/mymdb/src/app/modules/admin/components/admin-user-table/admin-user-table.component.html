@@ -1,0 +1,29 @@
+<div class="page">
+  <h1>User Administration</h1>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>UserId</th>
+          <th>Email</th>
+          <th>UserName</th>
+          <th>Manage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users$ | async; let i = index">
+          <th>{{ i + 1 }}</th>
+          <td>{{ user.id }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.userName }}</td>
+          <td class="table-controls">
+            <button class="button button-danger" (click)="OnDelete(user.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

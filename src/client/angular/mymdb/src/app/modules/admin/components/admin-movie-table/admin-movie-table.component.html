@@ -1,0 +1,32 @@
+<div class="page">
+  <h1>Movie Administration</h1>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Rating</th>
+          <th>UserId</th>
+          <th>UpdatedAt</th>
+          <th>Manage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of movies$ | async; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ sliceTitle(movie.title) }}</td>
+          <td>{{ movie.rating }}</td>
+          <td>{{ movie.userId }}</td>
+          <td>{{ movie.updatedAt }}</td>
+          <td class="table-controls">
+            <button class="button" (click)="OnEdit(movie.id)">Edit</button>
+            <button class="button button-danger" (click)="OnDelete(movie.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

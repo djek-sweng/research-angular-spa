@@ -11,7 +11,7 @@ import { IMovie } from '../../models/movie.model';
 })
 export class MovieAddComponent {
   @Input() visible = false;
-  @Output() close = new EventEmitter<void>();
+  @Output() exitForm = new EventEmitter<void>();
 
   constructor(private readonly movieService: MovieService) {}
 
@@ -29,13 +29,13 @@ export class MovieAddComponent {
 
     this.movieService.createMovie(movie);
 
-    this.close.emit();
+    this.exitForm.emit();
 
     form.reset();
   }
 
   onCancel(form: NgForm) {
-    this.close.emit();
+    this.exitForm.emit();
 
     form.reset();
   }

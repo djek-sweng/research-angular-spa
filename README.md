@@ -10,29 +10,29 @@ An admin user (automatically created) is able to manage all registered applicati
 
 Angular frontend (client):
 
-- Routing
-- Eager and lazy loading modules
-- HttpClient
-- HttpInterceptor
+- [Routing](https://angular.io/guide/routing-overview)
+- Eager and [lazy-loading modules](https://angular.io/guide/lazy-loading-ngmodules)
+- [HttpClient](https://angular.io/guide/understanding-communicating-with-http)
+- [HttpInterceptor](https://angular.io/guide/http-intercept-requests-and-responses)
 - Resolver
-- Guards
-- RxJS
-- NgRx store with actions, effects, reducers and selectors
-- Redux DevTools ready
-- Forms (template and reactive)
-- Local storage
-- Bootstrap CSS
+- [Guards](https://angular.io/api/router/CanActivateFn)
+- [RxJS](https://rxjs.dev/)
+- [NgRx](https://ngrx.io/) store with actions, effects, reducers and selectors
+- [Redux](https://redux.js.org/) DevTools ready
+- [Forms](https://angular.io/guide/forms-overview) (template and reactive)
+- [Bootstrap](https://getbootstrap.com/) CSS
 - Loading spinner
+- Local storage
 - Component and module driven development
 
 ASP.NET Core web-API backend (server):
 
-- ASP.NET Core Identity (user store)
-- Entity Framework Core (database ORM)
-- Sqlite database
+- [ASP.NET Core Identity](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity) (user store)
+- [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) (database ORM)
+- [Sqlite](https://www.sqlite.org/) database
 - Authentication and authorization
-- Jwt Bearer token
-- Swagger API explorer
+- [JWT](https://jwt.io/introduction) Bearer token
+- [Swagger](https://swagger.io/) API explorer
 - Exception filter
 - Usecase and clean-code driven development
 

@@ -11,7 +11,7 @@
   --text-color: rgba(255, 255, 255, 0.87);
   --background-color: #242424;
   --active-color: #61dafbaa;
-  --danger-color: red;
+  --danger-color: #ff4141;
   --error-color: orangered;
 
   --border: 2px solid var(--color-dark-grey);

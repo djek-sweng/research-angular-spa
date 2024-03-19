@@ -108,6 +108,10 @@ ul {
   margin-top: 0.5rem;
 }
 
+.form-group > button {
+  margin-bottom: 0.25rem;
+}
+
 .form-label {
   font-size: 1.1rem;
   font-weight: bold;

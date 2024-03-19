@@ -3,7 +3,7 @@
 <div class="page">
   <h1>Favorite Movies</h1>
   <div class="controls">
-    <button class="btn" (click)="onAdd()">Add Movie</button>
+    <button class="button" (click)="onAdd()">Add Movie</button>
   </div>
   <div class="list">
     <app-movie-list-item *ngFor="let movie of movies$ | async" [movie]="movie">

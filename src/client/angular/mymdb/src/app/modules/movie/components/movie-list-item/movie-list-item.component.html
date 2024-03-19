@@ -1,7 +1,7 @@
 <div class="card">
   <img [src]="movie.imageUrl" [alt]="movie.title" class="card-img-top" />
   <div class="card-body">
-    <h1 class="card-title">{{ movie.title }}</h1>
+    <h1 class="card-title">{{ getTitle() }}</h1>
     <h2 class="card-subtitle">
       {{ getDescription() }}
     </h2>

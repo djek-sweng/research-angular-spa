@@ -14,6 +14,8 @@
   --error-color: orangered;
 
   --border: 2px solid var(--color-dark-grey);
+
+  --footer-height: 2.5rem;
 }
 
 * {

@@ -17,7 +17,11 @@ export class MovieListItemComponent {
     return diff > 0 ? `Last updated ${diff} days ago` : 'Last updated today';
   }
 
+  getTitle(): string | undefined {
+    return this.movie.title?.slice(0, 40);
+  }
+
   getDescription(): string | undefined {
-    return this.movie.description?.slice(0, 100);
+    return this.movie.description?.slice(0, 80);
   }
 }

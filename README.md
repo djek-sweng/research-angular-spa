@@ -1,12 +1,12 @@
-### My Movie Database - Angular SPA and ASP.NET Core web-API
+# Research Angular SPA (and ASP.NET Core web-API)
 
-In this repository I show a fullstack basic implementation of an [Angular](https://angular.io/) single page application (SPA) and an [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core) web-API.
+In this repository I researched a basic fullstack implementation of an [Angular](https://angular.io/) single page application (SPA) and an [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core) web-API.
 
 This application implements a minimal movie database. After successful authentication users can manage their favorite movies in a card view and store them into a database.
 
 An admin user (automatically created) is able to manage all registered application users and their favorite movies.
 
-#### **Tech-Facts**
+## Tech-Facts
 
 Angular frontend (client):
 
@@ -36,14 +36,20 @@ ASP.NET Core web-API backend (server):
 - Exception filter
 - Usecase and clean-code driven development
 
-#### **Run Applications**
+## Run Applications
 
 ```sh
-$ ./run_spa.sh  # Angular SPA
-$ ./run_api.sh  # ASP.NET Core web-API
+$ ./run_server.sh   # ASP.NET Core web-API
+$ ./run_client.sh   # Angular SPA
 ```
 
-#### **Application Sign-Up and Sign-In**
+## Clean Build Artefacts
+
+```sh
+$ ./clean.sh        # clean build artefacts
+```
+
+## Application Signup and Signin
 
 With the start of the application an admin user is created. The admin credentials are:
 
@@ -52,26 +58,35 @@ With the start of the application an admin user is created. The admin credential
 
 You can sign up new users on the authentication page.
 
-#### **Toolchain Requirements and Versions**
+## Toolchain Requirements and Versions
 
 ```sh
 $ ng version
-    Angular CLI: 16.1.8
-    Node: 18.17.0
-    Package Manager: npm 9.8.1
+    Angular CLI: 17.3.0
+    Node: 20.11.0
+    Package Manager: npm 10.4.0
 
 $ dotnet --info
     .NET SDKs installed:
-    7.0.400
+    8.0.202
 
     .NET runtimes installed:
-    Microsoft.AspNetCore.App 7.0.10
-    Microsoft.NETCore.App 7.0.10
+    Microsoft.AspNetCore.App 8.0.3
+    Microsoft.NETCore.App 8.0.3
 
 $ dotnet ef --version
     Entity Framework Core .NET Command-line Tools
-    7.0.10
+    8.0.3
 
-$ sqlite3 --version
-    3.39.5
+$ code --version
+    1.87.2
+
+    Useful extensions:
+      angular.ng-template
+      ms-dotnettools.csharp
+      qwtel.sqlite-viewer
+      dbaeumer.vscode-eslint
+      esbenp.prettier-vscode
+      editorconfig.editorconfig
+      pkief.material-icon-theme
 ```

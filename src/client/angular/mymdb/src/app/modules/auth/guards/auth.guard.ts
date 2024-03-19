@@ -12,7 +12,9 @@ import { AuthService } from '../services/auth.service';
 import { User } from '../../shared/models/user.model';
 
 export const AuthGuard: CanActivateFn = (
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   route: ActivatedRouteSnapshot,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   state: RouterStateSnapshot
 ): Observable<boolean | UrlTree> => {
   const urlTree = inject(Router).createUrlTree(['/auth']);

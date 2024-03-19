@@ -16,6 +16,7 @@ export interface IAdminMovieResolve {
 
 export const adminMovieResolver: ResolveFn<IAdminMovieResolve> = (
   route: ActivatedRouteSnapshot,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   state: RouterStateSnapshot
 ):
   | Observable<IAdminMovieResolve>

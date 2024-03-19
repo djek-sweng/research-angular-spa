@@ -16,6 +16,7 @@ export interface IMovieResolve {
 
 export const movieResolver: ResolveFn<IMovieResolve> = (
   route: ActivatedRouteSnapshot,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   state: RouterStateSnapshot
 ): Observable<IMovieResolve> | Promise<IMovieResolve> | IMovieResolve => {
   return GetMovieUseCase.create().execute(route);

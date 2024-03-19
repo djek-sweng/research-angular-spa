@@ -39,14 +39,14 @@ ASP.NET Core web-API backend (server):
 ## Run Applications
 
 ```sh
-$ ./run_server.sh   # ASP.NET Core web-API
-$ ./run_client.sh   # Angular SPA
+./run_server.sh   # ASP.NET Core web-API
+./run_client.sh   # Angular SPA
 ```
 
 ## Clean Build Artefacts
 
 ```sh
-$ ./clean.sh        # clean build artefacts
+./clean.sh        # clean build artefacts
 ```
 
 ## Application Signup and Signin
@@ -61,32 +61,32 @@ You can sign up new users on the authentication page.
 ## Toolchain Requirements and Versions
 
 ```sh
-$ ng version
-    Angular CLI: 17.3.0
-    Node: 20.11.0
-    Package Manager: npm 10.4.0
+ng version
+  Angular CLI: 17.3.0
+  Node: 20.11.0
+  Package Manager: npm 10.4.0
 
-$ dotnet --info
-    .NET SDKs installed:
-    8.0.202
+dotnet --info
+  .NET SDKs installed:
+  8.0.202
 
-    .NET runtimes installed:
-    Microsoft.AspNetCore.App 8.0.3
-    Microsoft.NETCore.App 8.0.3
+  .NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.3
+  Microsoft.NETCore.App 8.0.3
 
-$ dotnet ef --version
-    Entity Framework Core .NET Command-line Tools
-    8.0.3
+dotnet ef --version
+  Entity Framework Core .NET Command-line Tools
+  8.0.3
 
-$ code --version
-    1.87.2
+code --version
+  1.87.2
 
-    Useful extensions:
-      angular.ng-template
-      ms-dotnettools.csharp
-      qwtel.sqlite-viewer
-      dbaeumer.vscode-eslint
-      esbenp.prettier-vscode
-      editorconfig.editorconfig
-      pkief.material-icon-theme
+  Useful extensions:
+    angular.ng-template
+    ms-dotnettools.csharp
+    qwtel.sqlite-viewer
+    dbaeumer.vscode-eslint
+    esbenp.prettier-vscode
+    editorconfig.editorconfig
+    pkief.material-icon-theme
 ```

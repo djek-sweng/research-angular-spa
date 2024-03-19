@@ -22,7 +22,9 @@
           <td>{{ movie.updatedAt }}</td>
           <td class="table-controls">
             <button class="button" (click)="OnEdit(movie.id)">Edit</button>
-            <button class="button" (click)="OnDelete(movie.id)">Delete</button>
+            <button class="button button-danger" (click)="OnDelete(movie.id)">
+              Delete
+            </button>
           </td>
         </tr>
       </tbody>
